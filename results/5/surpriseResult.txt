@@ -1,0 +1,34 @@
+
+Naive bayes used on the first 50% of fer2017surprise.arff
+=== Summary ===
+
+Correctly Classified Instances       11657               64.9668 %
+Incorrectly Classified Instances      6286               35.0332 %
+Kappa statistic                          0.15  
+K&B Relative Info Score            -2447670.6181 %
+K&B Information Score               -12199.4291 bits     -0.6799 bits/instance
+Class complexity | order 0            8940.6047 bits      0.4983 bits/instance
+Class complexity | scheme          2461783.2752 bits    137.2002 bits/instance
+Complexity improvement     (Sf)    -2452842.6705 bits   -136.7019 bits/instance
+Mean absolute error                      0.3505
+Root mean squared error                  0.5912
+Relative absolute error                179.7512 %
+Root relative squared error            189.3507 %
+Total Number of Instances            17943     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.670    0.353    0.189      0.670    0.295      0.203    0.691     0.182     surprise
+                 0.647    0.330    0.941      0.647    0.767      0.203    0.691     0.936     not_surprise
+Weighted Avg.    0.650    0.332    0.859      0.650    0.715      0.203    0.691     0.853     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+  1316   648 |     a = surprise
+  5638 10341 |     b = not_surprise
+
+
+
+

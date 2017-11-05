@@ -1,0 +1,34 @@
+
+Naive bayes used on the first 50% of fer2017fear.arff
+=== Summary ===
+
+Correctly Classified Instances       10479               58.4016 %
+Incorrectly Classified Instances      7464               41.5984 %
+Kappa statistic                          0.0711
+K&B Relative Info Score            -2066793.6722 %
+K&B Information Score               -12164.2568 bits     -0.6779 bits/instance
+Class complexity | order 0           10558.6136 bits      0.5885 bits/instance
+Class complexity | scheme           871554.2456 bits     48.5735 bits/instance
+Complexity improvement     (Sf)    -860995.632  bits    -47.985  bits/instance
+Mean absolute error                      0.4156
+Root mean squared error                  0.6421
+Relative absolute error                170.9387 %
+Root relative squared error            184.1506 %
+Total Number of Instances            17943     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.540    0.409    0.179      0.540    0.269      0.092    0.589     0.176     fear
+                 0.591    0.460    0.886      0.591    0.709      0.092    0.583     0.886     not_fear
+Weighted Avg.    0.584    0.453    0.786      0.584    0.647      0.092    0.584     0.785     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1371 1170 |    a = fear
+ 6294 9108 |    b = not_fear
+
+
+
+

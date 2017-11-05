@@ -1,0 +1,34 @@
+
+Naive bayes used on the first 50% of fer2017angry.arff
+=== Summary ===
+
+Correctly Classified Instances       10143               56.529  %
+Incorrectly Classified Instances      7800               43.471  %
+Kappa statistic                          0.0643
+K&B Relative Info Score            -2403850.6339 %
+K&B Information Score               -13831.0466 bits     -0.7708 bits/instance
+Class complexity | order 0           10321.9395 bits      0.5753 bits/instance
+Class complexity | scheme           589527.0385 bits     32.8555 bits/instance
+Complexity improvement     (Sf)    -579205.099  bits    -32.2803 bits/instance
+Mean absolute error                      0.4349
+Root mean squared error                  0.6558
+Relative absolute error                184.3673 %
+Root relative squared error            190.957  %
+Total Number of Instances            17943     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.561    0.434    0.170      0.561    0.261      0.087    0.591     0.171     angry
+                 0.566    0.439    0.891      0.566    0.692      0.087    0.589     0.893     not_angry
+Weighted Avg.    0.565    0.439    0.792      0.565    0.633      0.087    0.589     0.795     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1374 1077 |    a = angry
+ 6723 8769 |    b = not_angry
+
+
+
+

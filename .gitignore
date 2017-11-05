@@ -1,0 +1,18 @@
+# IntelliJ stuff
+.idea/
+/out/
+
+# Build stuff
+build/
+gradle/
+.gradle/
+gradlew
+gradlew.bat
+settings.gradle
+
+# Assignment files
+*.pdf
+*.docx
+
+# Data folder is too big for GitHub
+/fer2017

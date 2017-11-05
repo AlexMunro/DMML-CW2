@@ -1,0 +1,34 @@
+
+Naive bayes used on the first 50% of fer2017disgust.arff
+=== Summary ===
+
+Correctly Classified Instances        9916               55.2639 %
+Incorrectly Classified Instances      8027               44.7361 %
+Kappa statistic                          0.0155
+K&B Relative Info Score            -45639717.8374 %
+K&B Information Score               -49711.5672 bits     -2.7705 bits/instance
+Class complexity | order 0            1948.4649 bits      0.1086 bits/instance
+Class complexity | scheme           138118.4543 bits      7.6976 bits/instance
+Complexity improvement     (Sf)    -136169.9895 bits     -7.589  bits/instance
+Mean absolute error                      0.4467
+Root mean squared error                  0.6583
+Relative absolute error               1573.2041 %
+Root relative squared error            552.9468 %
+Total Number of Instances            17943     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.698    0.449    0.022      0.698    0.043      0.059    0.699     0.036     disgust
+                 0.551    0.302    0.992      0.551    0.708      0.059    0.698     0.993     not_disgust
+Weighted Avg.    0.553    0.304    0.978      0.553    0.699      0.059    0.698     0.979     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  180   78 |    a = disgust
+ 7949 9736 |    b = not_disgust
+
+
+
+

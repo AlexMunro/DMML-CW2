@@ -1,0 +1,44 @@
+
+Bayesian classifier on fer2017.arff
+=== Summary ===
+
+Correctly Classified Instances        8870               24.7165 %
+Incorrectly Classified Instances     27017               75.2835 %
+Kappa statistic                          0.1116
+K&B Relative Info Score             612289.8397 %
+K&B Information Score                15992.1533 bits      0.4456 bits/instance
+Class complexity | order 0           93728.145  bits      2.6118 bits/instance
+Class complexity | scheme          7251420.2835 bits    202.0626 bits/instance
+Complexity improvement     (Sf)    -7157692.1385 bits   -199.4508 bits/instance
+Mean absolute error                      0.2151
+Root mean squared error                  0.4616
+Relative absolute error                 91.06   %
+Root relative squared error            134.3362 %
+Total Number of Instances            35887     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.067    0.028    0.277      0.067    0.108      0.075    0.575     0.182     Angry
+                 0.177    0.058    0.045      0.177    0.072      0.062    0.623     0.031     Disgust
+                 0.068    0.040    0.219      0.068    0.103      0.047    0.551     0.172     Fear
+                 0.244    0.128    0.389      0.244    0.300      0.138    0.591     0.336     Happy
+                 0.437    0.279    0.242      0.437    0.312      0.129    0.619     0.230     Sad
+                 0.602    0.281    0.212      0.602    0.313      0.217    0.701     0.199     Surprise
+                 0.135    0.072    0.281      0.135    0.182      0.086    0.581     0.225     Neutral
+Weighted Avg.    0.247    0.134    0.281      0.247    0.225      0.113    0.599     0.234     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f    g   <-- classified as
+  331  332  254  724 1721 1305  286 |    a = Angry
+   14   97   11   76  143  184   22 |    b = Disgust
+  190  327  346  583 1380 1967  328 |    c = Fear
+  208  464  290 2197 2496 2614  720 |    d = Happy
+  182  377  331  753 2655 1241  538 |    e = Sad
+  121  170  139  418  500 2410  244 |    f = Surprise
+  147  378  211  895 2071 1662  834 |    g = Neutral
+
+
+
+

@@ -1,0 +1,34 @@
+
+Naive bayes used on the first 50% of fer2017sad.arff
+=== Summary ===
+
+Correctly Classified Instances       10776               60.0568 %
+Incorrectly Classified Instances      7167               39.9432 %
+Kappa statistic                          0.1135
+K&B Relative Info Score            -1279986.7236 %
+K&B Information Score                -8433.7724 bits     -0.47   bits/instance
+Class complexity | order 0           11821.0545 bits      0.6588 bits/instance
+Class complexity | scheme          1362981.351  bits     75.9617 bits/instance
+Complexity improvement     (Sf)    -1351160.2965 bits    -75.3029 bits/instance
+Mean absolute error                      0.3997
+Root mean squared error                  0.6305
+Relative absolute error                141.29   %
+Root relative squared error            167.6587 %
+Total Number of Instances            17943     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.575    0.394    0.231      0.575    0.329      0.138    0.619     0.223     sad
+                 0.606    0.425    0.874      0.606    0.716      0.138    0.610     0.871     not_sad
+Weighted Avg.    0.601    0.420    0.764      0.601    0.650      0.138    0.611     0.760     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1759 1300 |    a = sad
+ 5867 9017 |    b = not_sad
+
+
+
+
