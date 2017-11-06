@@ -19,6 +19,7 @@ This is a Kotlin project, so you will need to use a compatible IDE or the Kotlin
 |   |---attributeRankings - per dataset orderings of attributes by correlation to class
 |   |---discretized - discretized versions of datasets
 |   |---randomised - datasets which have been ordered randomly
+|   |---curated - datasets that have had attributes filtered based on class correlation
 |   supplied csv files
 |   derived arff files
 |

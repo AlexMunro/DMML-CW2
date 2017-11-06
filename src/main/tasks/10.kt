@@ -1,5 +1,4 @@
-import weka.clusterers.EM
-import weka.core.Instances
+import weka.clusterers.*
 
 /**
 10. Try different clustering algorithms. Try also to vary the number of clusters manually and
@@ -11,28 +10,20 @@ clustering results.
 
 fun main(args: Array<String>){
     val resultsDir = "results/10"
-
     val classlessClusterer = EM()
-
-    // 9.1 first excluding the class attribute
-    val dataset = fer2017()
-
-    val classlessDataset = Instances(dataset)
-    classlessDataset.setClassIndex(-1)
-    classlessDataset.deleteAttributeAt(0)
-
     classlessClusterer.numClusters = emotions().size
-    classlessClusterer.buildClusterer(classlessDataset)
-
-    val classlessEval = evalClusterer(classlessDataset, classlessClusterer)
-    saveClustererEvaluation("Classless evaluation", "$resultsDir/classlessEval.txt", classlessEval)
-
-    // 9.2 then including the class attribute
     val classClusterer = EM()
     classClusterer.numClusters = emotions().size
-    classClusterer.buildClusterer(dataset)
-    classlessDataset.setClassIndex(-1) // We're still including the class but not highlighting that it is the class
+    clustererExperiment(classlessClusterer, classClusterer, resultsDir)
 
-    val classEval = evalClusterer(dataset, classClusterer)
-    saveClustererEvaluation("Class evaluation", "$resultsDir/classEval.txt", classEval)
+    val classlessClustererFF = FarthestFirst()
+    classlessClustererFF.numClusters = emotions().size
+    val classClustererFF = FarthestFirst()
+    classClustererFF.numClusters = emotions().size
+    clustererExperiment(classlessClustererFF, classClustererFF, resultsDir)
+
+    val classlessCobweb = Cobweb()
+    val classCobweb = Cobweb()
+    clustererExperiment(classlessCobweb, classCobweb, resultsDir)
+
 }

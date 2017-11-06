@@ -27,10 +27,10 @@ fun clustererExperiment(classlessClusterer: Clusterer, classClusterer: Clusterer
     classlessClusterer.buildClusterer(classlessDataset)
 
     val classlessEval = evalClusterer(testSet, classlessClusterer)
-    saveClustererEvaluation("Classless evaluation", "$resultsDir/classlessEval.txt", classlessEval)
+    saveClustererEvaluation("Classless evaluation", "$resultsDir/${classClusterer.javaClass.name}classlessEval.txt", classlessEval)
     // 9.2 then including the class attribute
 
     classClusterer.buildClusterer(dataset)
     val classEval = evalClusterer(testSet, classClusterer)
-    saveClustererEvaluation("Class evaluation", "$resultsDir/classEval.txt", classEval)
+    saveClustererEvaluation("Class evaluation", "$resultsDir/${classClusterer.javaClass.name}classEval.txt", classEval)
 }
