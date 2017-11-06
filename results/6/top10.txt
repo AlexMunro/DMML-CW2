@@ -1,0 +1,44 @@
+
+Bayesian classifier run on top 10 attributes per emotion
+=== Summary ===
+
+Correctly Classified Instances        8100               22.5708 %
+Incorrectly Classified Instances     27787               77.4292 %
+Kappa statistic                          0.0968
+K&B Relative Info Score             568608.6514 %
+K&B Information Score                14851.2618 bits      0.4138 bits/instance
+Class complexity | order 0           93728.145  bits      2.6118 bits/instance
+Class complexity | scheme           282854.0343 bits      7.8818 bits/instance
+Complexity improvement     (Sf)    -189125.8893 bits     -5.27   bits/instance
+Mean absolute error                      0.2226
+Root mean squared error                  0.4233
+Relative absolute error                 94.2488 %
+Root relative squared error            123.172  %
+Total Number of Instances            35887     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.082    0.039    0.253      0.082    0.124      0.072    0.569     0.179     Angry
+                 0.194    0.129    0.023      0.194    0.041      0.024    0.608     0.021     Disgust
+                 0.021    0.014    0.206      0.021    0.039      0.022    0.545     0.167     Fear
+                 0.218    0.120    0.378      0.218    0.277      0.121    0.606     0.344     Happy
+                 0.314    0.196    0.246      0.314    0.275      0.107    0.597     0.225     Sad
+                 0.562    0.261    0.213      0.562    0.308      0.208    0.699     0.235     Surprise
+                 0.220    0.142    0.244      0.220    0.232      0.081    0.578     0.225     Neutral
+Weighted Avg.    0.226    0.126    0.267      0.226    0.214      0.099    0.596     0.238     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f    g   <-- classified as
+  405  775   90  631 1186 1183  683 |    a = Angry
+   21  106    8   78  101  187   46 |    b = Disgust
+  233  667  110  582 1027 1851  651 |    c = Fear
+  335 1253   89 1961 1619 2282 1450 |    d = Happy
+  299  847   92  704 1906 1307  922 |    e = Sad
+   92  318   68  344  464 2248  468 |    f = Surprise
+  214  689   76  881 1459 1515 1364 |    g = Neutral
+
+
+
+

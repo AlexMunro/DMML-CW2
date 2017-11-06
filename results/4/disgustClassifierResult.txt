@@ -1,0 +1,34 @@
+
+Bayesian classifier on fer2017disgust.arff
+=== Summary ===
+
+Correctly Classified Instances       19394               54.0419 %
+Incorrectly Classified Instances     16493               45.9581 %
+Kappa statistic                          0.0141
+K&B Relative Info Score            -85384648.3891 %
+K&B Information Score               -97323.9784 bits     -2.712  bits/instance
+Class complexity | order 0            4084.6802 bits      0.1138 bits/instance
+Class complexity | scheme          1013978.5347 bits     28.2548 bits/instance
+Complexity improvement     (Sf)    -1009893.8544 bits    -28.1409 bits/instance
+Mean absolute error                      0.4593
+Root mean squared error                  0.6744
+Relative absolute error               1528.5847 %
+Root relative squared error            550.4263 %
+Total Number of Instances            35887     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.680    0.462    0.022      0.680    0.043      0.054    0.661     0.025     disgust
+                 0.538    0.320    0.991      0.538    0.698      0.054    0.672     0.991     not_disgust
+Weighted Avg.    0.540    0.322    0.976      0.540    0.688      0.054    0.672     0.977     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+   372   175 |     a = disgust
+ 16318 19022 |     b = not_disgust
+
+
+
+

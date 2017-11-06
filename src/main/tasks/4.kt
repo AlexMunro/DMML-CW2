@@ -8,9 +8,16 @@ classifier’s accuracy on different classes.
 
 fun main(args: Array<String>){
     val resultsDir = "results/4"
+    println("Running Naive Bayesian classifier on full dataset")
     val dataset = discretize(fer2017())
     val eval = runBayes(dataset)
-    //saveEvaluation("Bayesian classifier on fer2017.arff", "$resultsDir/classifierResult.txt", eval)
-    //saveCorrelations("fer2017/attributeRankings/fer2017.csv", rankAttributeCorrelation(dataset))
-//            val rankedDataset = rankAttrs(dataset)
+    saveEvaluation("Bayesian classifier on fer2017.arff", "$resultsDir/classifierResult.txt", eval)
+    saveCorrelations("fer2017/attributeRankings/fer2017.csv", rankAttributeCorrelation(dataset))
+
+    emotions().forEach {
+        println("Running Naive Bayesian classifier on $it dataset")
+        val emotionDataset = discretize(ferEmotion(it))
+        val emotionEval = runBayes(emotionDataset)
+        saveEvaluation("Bayesian classifier on fer2017$it.arff", "$resultsDir/${it}ClassifierResult.txt", emotionEval)
+    }
 }

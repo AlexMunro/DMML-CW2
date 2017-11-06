@@ -1,0 +1,34 @@
+
+Bayesian classifier on fer2017sad.arff
+=== Summary ===
+
+Correctly Classified Instances       21450               59.7709 %
+Incorrectly Classified Instances     14437               40.2291 %
+Kappa statistic                          0.1124
+K&B Relative Info Score            -2645251.4828 %
+K&B Information Score               -17358.8899 bits     -0.4837 bits/instance
+Class complexity | order 0           23548.5493 bits      0.6562 bits/instance
+Class complexity | scheme          3085009.9695 bits     85.9646 bits/instance
+Complexity improvement     (Sf)    -3061461.4202 bits    -85.3084 bits/instance
+Mean absolute error                      0.4025
+Root mean squared error                  0.6331
+Relative absolute error                143.0682 %
+Root relative squared error            168.8013 %
+Total Number of Instances            35887     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.580    0.399    0.229      0.580    0.328      0.137    0.616     0.221     sad
+                 0.601    0.420    0.875      0.601    0.713      0.137    0.608     0.871     not_sad
+Weighted Avg.    0.598    0.417    0.766      0.598    0.648      0.137    0.610     0.761     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+  3523  2554 |     a = sad
+ 11883 17927 |     b = not_sad
+
+
+
+

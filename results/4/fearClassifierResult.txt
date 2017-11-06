@@ -1,0 +1,34 @@
+
+Bayesian classifier on fer2017fear.arff
+=== Summary ===
+
+Correctly Classified Instances       20847               58.0907 %
+Incorrectly Classified Instances     15040               41.9093 %
+Kappa statistic                          0.0739
+K&B Relative Info Score            -4139005.3914 %
+K&B Information Score               -24474.4575 bits     -0.682  bits/instance
+Class complexity | order 0           21218.5845 bits      0.5913 bits/instance
+Class complexity | scheme          2024869.2584 bits     56.4235 bits/instance
+Complexity improvement     (Sf)    -2003650.6739 bits    -55.8322 bits/instance
+Mean absolute error                      0.4195
+Root mean squared error                  0.6454
+Relative absolute error                171.437  %
+Root relative squared error            184.5241 %
+Total Number of Instances            35887     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.551    0.414    0.181      0.551    0.273      0.097    0.583     0.175     fear
+                 0.586    0.449    0.887      0.586    0.706      0.097    0.580     0.884     not_fear
+Weighted Avg.    0.581    0.444    0.786      0.581    0.644      0.097    0.581     0.783     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+  2821  2300 |     a = fear
+ 12740 18026 |     b = not_fear
+
+
+
+

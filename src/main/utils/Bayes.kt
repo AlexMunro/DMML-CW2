@@ -6,7 +6,6 @@ import java.util.*
 fun runBayes(dataset: Instances): Evaluation{
     val eval = Evaluation(dataset)
     val classifier = NaiveBayes()
-    //classifier.useSupervisedDiscretization = true
     classifier.buildClassifier(dataset)
     eval.evaluateModel(classifier, dataset)
     return eval

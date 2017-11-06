@@ -1,0 +1,34 @@
+
+Bayesian classifier on fer2017neutral.arff
+=== Summary ===
+
+Correctly Classified Instances       21063               58.6926 %
+Incorrectly Classified Instances     14824               41.3074 %
+Kappa statistic                          0.0918
+K&B Relative Info Score            -2688366.3223 %
+K&B Information Score               -17848.2034 bits     -0.4973 bits/instance
+Class complexity | order 0           23824.0862 bits      0.6639 bits/instance
+Class complexity | scheme          1901932.739  bits     52.9978 bits/instance
+Complexity improvement     (Sf)    -1878108.6528 bits    -52.334  bits/instance
+Mean absolute error                      0.4131
+Root mean squared error                  0.6401
+Relative absolute error                144.5392 %
+Root relative squared error            169.3506 %
+Total Number of Instances            35887     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.552    0.406    0.221      0.552    0.316      0.112    0.595     0.218     neutral
+                 0.594    0.448    0.864      0.594    0.704      0.112    0.593     0.862     not_neutral
+Weighted Avg.    0.587    0.441    0.753      0.587    0.637      0.112    0.594     0.751     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+  3421  2777 |     a = neutral
+ 12047 17642 |     b = not_neutral
+
+
+
+
