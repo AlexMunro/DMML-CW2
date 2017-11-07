@@ -22,8 +22,12 @@ fun main(args: Array<String>){
     classClustererFF.numClusters = emotions().size
     clustererExperiment(classlessClustererFF, classClustererFF, resultsDir)
 
-    val classlessCobweb = Cobweb()
+/*  val classlessCobweb = Cobweb()
     val classCobweb = Cobweb()
     clustererExperiment(classlessCobweb, classCobweb, resultsDir)
+
+    Didn't finish running overnight, that's what I get for using clusterers without looking them up first!
+
+    */
 
 }
